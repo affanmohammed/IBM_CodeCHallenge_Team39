@@ -1,0 +1,122 @@
+<html>
+    
+	<head>
+	 
+	 <title> this is pension form </title>
+	 
+	</head>
+
+<body bgcolor="skyblue">
+<center>
+<h1> PENSIONER DETAILS </h1>
+</center>
+<form>
+	
+	FirstName
+	<input type="text" name="FirstName" maxlength="30" />
+        (max 30 characters a-z and A-Z)
+	<br/><br/>
+	
+	LastName
+	<input type="text" name="LastName" maxlength="30" />
+        (max 30 characters a-z and A-Z)
+	<br/><br/>
+	
+	Emailid
+	<input type="text" name="Email_Id maxlength="50"/ >
+	<br/><br/>
+	
+	gender
+	<input type="radio" value="male" name="gender" />male         
+        <input type="radio" value="female" name="gender" />female 
+        <input type="radio" value="others" name="gender" />others 
+        <br/><br/>
+	
+	date of birth
+        <input type="date" min="1990-01-01" max="2020-01-01" name="dob" />
+        <br/><br/>
+
+        <div class="container">
+             <div class="f-group">
+                 <label for="">Country</label>
+                 <select name="slct1" id="slct1" onchange="populate(this.id,"slct2")">
+                    <option value=""> --choose country-- </option>
+                    <option value="india">INDIA</option>
+                    <option value="union territories">UNION TERRITORIES</OPTION>
+                 </select>
+             </div>
+
+<br/><br/>        
+
+        <div class="f-group">
+            <label for="">State</label>
+            <select name="slct2" id="slct2"></select>
+        </div>
+  </div>
+
+</br></br>
+
+
+   <script>
+      function populate(s1,s2)
+      {
+        var s1= document.getElementById(s1);
+        var s2= document.getElementById(s2);
+        
+         s2.innerHTML="";
+      
+          if(s1.value == "india")
+           {
+             var optionArray=['andhrapradesh|AndhraPradesh',	'arunachalpradesh|Arunachal Pradesh',	'assam|Assam' ,    'bihar|Bihar',	'chhattisgarh|Chhattisgarh',	'goa|Goa' ,   'gujarat|Gujarat' , 'haryana|Haryana'	,'himachalpradesh|HimachalPradesh' ,   'jharkhand|Jharkhand' ,   'karnataka|Karnataka'  , 'kerala|Kerala' ,   'madhyapradesh|MadhyaPradesh',	'maharastra|Maharastra',	'manipur|Manipur',    'meghalaya|Meghalaya',    'mizoram|Mizoram' ,  ' nagaland|Nagaland' ,  'Odisha|Odisha' ,  'punjab|Punjab' ,   'rajasthan|Rajasthan' ,  'sikkim|Sikkim' ,   'tamilnadu|TamilNadu' , 'telangana|Telangana'  , 'tripura|Tripura' , 'uttarpradesh|Uttarpradesh' ,  'uttarakhand|Uttarakhand' ,'westBengal|WestBengal'];
+           }
+           
+          elseif(s1.value  =='Union Territories')
+            {
+              var optionArray=[' andaman and nicobar|Andaman And Nicobar' 'delhi|Delhi'  'ladakh|Ladakh'  'chandigarh|Chandigarh'   'daman and diu and dadar and nagar haveli|Daman And Diu And Dadar And Nagar Haveli'   'jammu and Kashmir|Jammu And Kashmir' 'lakshadweep|Lakshadweep'];
+            }
+          
+          for(var option in optionArray)
+          {
+             var pair=optionArray[option].split("|");
+             var newoption=document.createElement("option");
+
+             newoption.value=pair[0];
+             newoption.innerHTML=pair[1];
+             s2.options.add(newoption);
+          }
+        }
+    </script>
+
+       Pincode
+       <input type="number" name="Pin_Code"maxlength="6"/>
+       (6 digit number)
+       <br/><br/> 
+	
+	Mobile number:<input type="text"name="country code"value="+91"size="1"/>
+	<input type="number" name="Mobile_Number"maxlength="10"/>
+	<br/><br/>
+
+        upload latest picture of persion
+        <input type="file"name="user image">
+        <br/><br/>
+        
+        
+	
+	<button type="RESET" style="background color:yellow;color:red">
+	RESET
+	</button>
+	<br/><br/>
+	
+	<CENTER>
+	<button type="GET OTP"style="background color:yellow;color:green">
+	GET OTP
+	</CENTER>
+	<br/><br/>
+	
+	</form>
+	</body>
+	
+	</html>
+	
+	
+	
