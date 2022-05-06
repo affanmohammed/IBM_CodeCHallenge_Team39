@@ -14,27 +14,27 @@
      </div>
 	
 	FirstName
-	<input type="text" name="FirstName" maxlength="30" />
+	<input type="text" name="FirstName" maxlength="30" required />
         (max 30 characters a-z and A-Z)
 	<br/><br/>
 	
 	LastName
-	<input type="text" name="LastName" maxlength="30" />
+	<input type="text" name="LastName" maxlength="30" required/>
         (max 30 characters a-z and A-Z)
 	<br/><br/>
 	
 	Emailid
-	<input type="text" name="Email_Id maxlength="50"/ >
+	<input type="text" name="Email_Id maxlength="50"required/ >
 	<br/><br/>
 	
 	gender
-	<input type="radio" value="male" name="gender" />male         
-        <input type="radio" value="female" name="gender" />female 
-        <input type="radio" value="others" name="gender" />others 
+	<input type="radio" value="male" name="gender" required/>male         
+        <input type="radio" value="female" name="gender" required />female 
+        <input type="radio" value="others" name="gender" required/>others 
         <br/><br/>
 	
 	date of birth
-        <input type="date" min="1990-01-01" max="2020-01-01" name="dob" />
+        <input type="date" min="1990-01-01" max="2020-01-01" name="dob" required/>
         <br/><br/>
 
 
@@ -51,7 +51,7 @@
     
               
                State
-               <select name="state">
+               <select name="state"required/>
                <option value="Andhra Pradesh">Andhra Pradesh</option>
                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -95,16 +95,17 @@
 
 
        Pincode
-       <input type="number" name="Pin_Code"maxlength="6"/>
+       <input type="number" name="Pin_Code"maxlength="6" required/>
        (6 digit number)
        <br/><br/> 
 	
 	Mobile number:<input type="text"name="country code"value="+91"size="1"/>
-	<input type="number" name="Mobile_Number"maxlength="10"/>
+	<input type="number" name="Mobile_Number"maxlength="10" required/>
+	(10 digit number)						       
 	<br/><br/>
 
         upload latest picture of persion
-        <input type="file"name="user image">
+        <input type="file"name="user image" required/>
         <br/><br/>
         
         
@@ -113,9 +114,14 @@
 	RESET
 	</button>
 	<br/><br/>
-	
+								     
+	<button type="submit" style="background color:yellow;color:red">
+        SUBMIT
+        </button> 
+        <br/><br/>								       
+								       
 	<CENTER>
-	<button type="GET OTP"style="background color:yellow;color:green">
+	<button type="GET OTP"style="background color:yellow;color:green"required/>
 	GET OTP
 	</CENTER>
 	<br/><br/>
