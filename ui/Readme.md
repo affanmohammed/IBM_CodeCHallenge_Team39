@@ -1,13 +1,3 @@
-Hi,
-
-My name is sai ganesh
-
-CSE
-
-Nadimpalli Satyanarayana raju institute of technology,
-
-Visakhapatnam.
-
 
 My contribution to the Online live Certificate is (UI) Frontend part with help of  HTML, CSS, JAVASCRIPT 
 collecting the details of the person who need to get the certificate and renewal of the certificate.
