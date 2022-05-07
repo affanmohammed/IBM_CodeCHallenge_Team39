@@ -7,10 +7,5 @@ steps:
 4.      start recording using webcam 
 5.      capture images of a pensioner 
 6.      verify new image with that in database 
-7.      if both images are identical, renewed for 1 more year
-8.      
-
-
-
-
-
+7.      if both images are identical, verification was successful and renewed for 1 more year, certificate is generated.
+8.      else, verification failed
