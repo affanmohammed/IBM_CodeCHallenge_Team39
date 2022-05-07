@@ -12,7 +12,7 @@ steps:
 
 
 
-Current status of our code:
+Current status of our project:
 
 We currently have designed front end and backend to login capture and store image.
 we have a database to store user info.
